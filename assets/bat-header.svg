@@ -1,62 +1,337 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" style="max-width:800px;">
-  <!-- Night sky -->
-  <rect width="800" height="200" fill="#0d1117" rx="12" />
-
-  <!-- Moon glow -->
-  <circle cx="680" cy="60" r="50" fill="#F77846" opacity="0.04" />
-  <circle cx="680" cy="60" r="35" fill="#F77846" opacity="0.08" />
-
-  <!-- Moon -->
-  <circle cx="680" cy="60" r="24" fill="#1a1a2e" />
-  <circle cx="680" cy="60" r="20" fill="#F77846" opacity="0.12" />
-  <circle cx="680" cy="60" r="14" fill="#F77846" opacity="0.2" />
-  <circle cx="680" cy="60" r="8" fill="#F77846" opacity="0.4" />
-  <circle cx="680" cy="60" r="4" fill="#F77846" opacity="0.7" />
-
-  <!-- Stars -->
-  <g fill="white" opacity="0.6">
-    <circle cx="80" cy="40" r="1.5"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite" /></circle>
-    <circle cx="200" cy="55" r="1" />
-    <circle cx="320" cy="30" r="1.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.2s" repeatCount="indefinite" /></circle>
-    <circle cx="450" cy="65" r="1" />
-    <circle cx="150" cy="85" r="1" opacity="0.4" />
-    <circle cx="520" cy="35" r="1.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite" /></circle>
-    <circle cx="620" cy="75" r="1" opacity="0.3" />
-    <circle cx="400" cy="20" r="1" />
-    <circle cx="560" cy="50" r="1" />
-    <circle cx="280" cy="80" r="1" opacity="0.4" />
-    <circle cx="720" cy="35" r="1"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite" /></circle>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#010108"/>
+      <stop offset="100%" stop-color="#0a0a18"/>
+    </linearGradient>
+    
+    <radialGradient id="moonFace" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fffff8"/>
+      <stop offset="55%" stop-color="#ece8d5"/>
+      <stop offset="100%" stop-color="#c5c0a5"/>
+    </radialGradient>
+    
+    <radialGradient id="innerHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="40%" stop-color="#fffff835"/>
+      <stop offset="100%" stop-color="#fffff800"/>
+    </radialGradient>
+    
+    <radialGradient id="outerHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="20%" stop-color="#fffff812"/>
+      <stop offset="100%" stop-color="#fffff800"/>
+    </radialGradient>
+    
+    <radialGradient id="ambientGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffff808"/>
+      <stop offset="100%" stop-color="#fffff800"/>
+    </radialGradient>
+    
+    <filter id="moonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="starGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+    
+    <!-- Gentle wave path across the moon -->
+    <path id="batPath" d="M-60,180 
+                          Q100,140 200,160
+                          Q300,180 460,140"/>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#sky)"/>
+  
+  <circle cx="200" cy="200" r="200" fill="url(#ambientGlow)"/>
+  
+  <g fill="#fff" filter="url(#starGlow)">
+    <circle cx="32" cy="42" r="1.1">
+      <animate attributeName="opacity" values=".3;.95;.3" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="375" cy="32" r="1.4">
+      <animate attributeName="opacity" values=".5;1;.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="365" cy="365" r=".95">
+      <animate attributeName="opacity" values=".4;.9;.4" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="42" cy="375" r="1.2">
+      <animate attributeName="opacity" values=".5;.95;.5" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="388" cy="170" r=".85">
+      <animate attributeName="opacity" values=".35;.85;.35" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="12" cy="180" r="1.05">
+      <animate attributeName="opacity" values=".55;1;.55" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="158" cy="18" r="1.25">
+      <animate attributeName="opacity" values=".4;.9;.4" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="65" cy="85" r=".9">
+      <animate attributeName="opacity" values=".5;.88;.5" dur="4.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="345" cy="72" r="1.1">
+      <animate attributeName="opacity" values=".45;.92;.45" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="305" cy="385" r=".9">
+      <animate attributeName="opacity" values=".5;1;.5" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="105" cy="380" r=".75">
+      <animate attributeName="opacity" values=".35;.8;.35" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="385" cy="285" r=".95">
+      <animate attributeName="opacity" values=".45;.88;.45" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="18" cy="320" r=".8">
+      <animate attributeName="opacity" values=".4;.85;.4" dur="3.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="25" r="1">
+      <animate attributeName="opacity" values=".5;.95;.5" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
   </g>
-
-  <!-- Bat -->
+  
+  <circle cx="200" cy="200" r="160" fill="url(#outerHalo)"/>
+  <circle cx="200" cy="200" r="115" fill="url(#innerHalo)"/>
+  
+  <circle cx="200" cy="200" r="68" fill="url(#moonFace)" filter="url(#moonGlow)"/>
+  
+  <g fill="#8a8878" opacity=".08">
+    <circle cx="168" cy="175" r="16"/>
+    <circle cx="232" cy="225" r="11"/>
+    <circle cx="215" cy="152" r="8"/>
+    <circle cx="155" cy="218" r="12"/>
+    <circle cx="240" cy="180" r="7"/>
+    <circle cx="195" cy="200" r="9"/>
+  </g>
+  
+  <!-- Bat flying across the moon -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="-250,85;950,80" dur="16s" repeatCount="indefinite" />
-
-    <g transform="translate(0,100)">
-      <!-- Left wing -->
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#batPath"/>
+    </animateMotion>
+    
+    <g>
+      <!-- UPPER WING -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="-8,0,0;12,0,0;-8,0,0" dur="0.35s" repeatCount="indefinite" />
-        <path d="M-4,-8 C-18,-28 -45,-18 -40,5 C-35,-3 -25,0 -18,-8 C-14,-3 -10,2 -4,-8Z" fill="#F77846" opacity="0.85" />
+        <animateTransform 
+          attributeName="transform" 
+          type="rotate" 
+          values="12 0 -2;-35 0 -2;12 0 -2" 
+          dur="0.16s" 
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+        
+        <!-- Arm bone -->
+        <path d="M0,-2 L-10,-3.5" stroke="#080808" stroke-width="1.8" stroke-linecap="round"/>
+        
+        <!-- Thumb claw -->
+        <path d="M-9,-3 L-7,-1" stroke="#0a0a0a" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+        
+        <!-- Outer wing -->
+        <g transform="translate(-10,-3.5)">
+          <animateTransform 
+            attributeName="transform" 
+            type="rotate" 
+            values="3 0 0;-18 0 0;3 0 0" 
+            dur="0.16s" 
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0.5 0 0.5 1;0.5 0 0.5 1"
+            additive="sum"/>
+          
+          <!-- Finger bones -->
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;-6 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-4,-8 L-3,-14" stroke="#080808" stroke-width="1" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;-10 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-9,-5 L-16,-8" stroke="#080808" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;-14 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-12,-2 L-22,-3" stroke="#080808" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;-16 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-10,2 L-18,3" stroke="#080808" stroke-width="0.7" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <!-- Wing membrane -->
+          <path fill="#080808" opacity="0.95">
+            <animate 
+              attributeName="d" 
+              dur="0.16s" 
+              repeatCount="indefinite"
+              calcMode="spline"
+              keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+              values="
+                M0,0 
+                C-2,-5 -3,-10 -3,-14
+                Q-6,-10 -10,-8
+                C-14,-6 -18,-6 -22,-3
+                Q-18,0 -18,3
+                L0,2.5 Q1,1 0,0 Z;
+                
+                M0,0 
+                C-1,-2 -2,-4 -2,-6
+                Q-4,-4 -6,-2
+                C-8,0 -10,2 -12,4
+                Q-8,5 -6,6
+                L0,2.5 Q1,1 0,0 Z;
+                
+                M0,0 
+                C-2,-5 -3,-10 -3,-14
+                Q-6,-10 -10,-8
+                C-14,-6 -18,-6 -22,-3
+                Q-18,0 -18,3
+                L0,2.5 Q1,1 0,0 Z"/>
+          </path>
+          
+          <!-- Membrane veins -->
+          <g stroke="#111" stroke-width="0.25" fill="none" opacity="0.4">
+            <path d="M-1,0 Q-2,-3 -2.5,-7">
+              <animate attributeName="d" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+                values="M-1,0 Q-2,-3 -2.5,-7;M-1,0 Q-1.5,-1 -2,-3;M-1,0 Q-2,-3 -2.5,-7"/>
+            </path>
+            <path d="M-4,0 Q-8,-1 -14,-1">
+              <animate attributeName="d" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+                values="M-4,0 Q-8,-1 -14,-1;M-3,1 Q-5,3 -8,4;M-4,0 Q-8,-1 -14,-1"/>
+            </path>
+          </g>
+        </g>
       </g>
-      <!-- Right wing -->
+      
+      <!-- LOWER WING -->
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="8,0,0;-12,0,0;8,0,0" dur="0.35s" repeatCount="indefinite" />
-        <path d="M4,-8 C18,-28 45,-18 40,5 C35,-3 25,0 18,-8 C14,-3 10,2 4,-8Z" fill="#F77846" opacity="0.85" />
+        <animateTransform 
+          attributeName="transform" 
+          type="rotate" 
+          values="-12 0 2;35 0 2;-12 0 2" 
+          dur="0.16s" 
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+        
+        <path d="M0,2 L-10,3.5" stroke="#080808" stroke-width="1.8" stroke-linecap="round"/>
+        
+        <path d="M-9,3 L-7,1" stroke="#0a0a0a" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+        
+        <g transform="translate(-10,3.5)">
+          <animateTransform 
+            attributeName="transform" 
+            type="rotate" 
+            values="-3 0 0;18 0 0;-3 0 0" 
+            dur="0.16s" 
+            repeatCount="indefinite"
+            calcMode="spline"
+            keySplines="0.5 0 0.5 1;0.5 0 0.5 1"
+            additive="sum"/>
+          
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;6 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-4,8 L-3,14" stroke="#080808" stroke-width="1" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;10 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-9,5 L-16,8" stroke="#080808" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;14 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-12,2 L-22,3" stroke="#080808" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <g>
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;16 0 0;0 0 0" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"/>
+            <path d="M0,0 L-10,-2 L-18,-3" stroke="#080808" stroke-width="0.7" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <path fill="#080808" opacity="0.95">
+            <animate 
+              attributeName="d" 
+              dur="0.16s" 
+              repeatCount="indefinite"
+              calcMode="spline"
+              keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+              values="
+                M0,0 
+                C-2,5 -3,10 -3,14
+                Q-6,10 -10,8
+                C-14,6 -18,6 -22,3
+                Q-18,0 -18,-3
+                L0,-2.5 Q1,-1 0,0 Z;
+                
+                M0,0 
+                C-1,2 -2,4 -2,6
+                Q-4,4 -6,2
+                C-8,0 -10,-2 -12,-4
+                Q-8,-5 -6,-6
+                L0,-2.5 Q1,-1 0,0 Z;
+                
+                M0,0 
+                C-2,5 -3,10 -3,14
+                Q-6,10 -10,8
+                C-14,6 -18,6 -22,3
+                Q-18,0 -18,-3
+                L0,-2.5 Q1,-1 0,0 Z"/>
+          </path>
+          
+          <g stroke="#111" stroke-width="0.25" fill="none" opacity="0.4">
+            <path d="M-1,0 Q-2,3 -2.5,7">
+              <animate attributeName="d" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+                values="M-1,0 Q-2,3 -2.5,7;M-1,0 Q-1.5,1 -2,3;M-1,0 Q-2,3 -2.5,7"/>
+            </path>
+            <path d="M-4,0 Q-8,1 -14,1">
+              <animate attributeName="d" dur="0.16s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+                values="M-4,0 Q-8,1 -14,1;M-3,-1 Q-5,-3 -8,-4;M-4,0 Q-8,1 -14,1"/>
+            </path>
+          </g>
+        </g>
       </g>
+      
       <!-- Body -->
-      <ellipse cx="0" cy="2" rx="4" ry="9" fill="#F77846" opacity="0.9" />
+      <ellipse cx="0" cy="0" rx="6" ry="3.5" fill="#080808"/>
+      <ellipse cx="-0.5" cy="0" rx="4" ry="2.5" fill="#0c0c0c"/>
+      
       <!-- Head -->
-      <circle cx="0" cy="-8" r="4.5" fill="#F77846" opacity="0.9" />
+      <ellipse cx="7.5" cy="0" rx="4.5" ry="4" fill="#080808"/>
+      
       <!-- Ears -->
-      <polygon points="-3,-12 -8,-22 -1,-16" fill="#F77846" opacity="0.9" />
-      <polygon points="3,-12 8,-22 1,-16" fill="#F77846" opacity="0.9" />
+      <path d="M4,-3 C3.5,-5 3,-9 4.5,-12 C5.5,-10 6,-9 7,-10 C7.5,-7 7.5,-4 6.5,-3 Z" fill="#080808"/>
+      <path d="M7,-3 C7,-6 8,-10 10,-13 C11,-11 11.5,-9.5 12.5,-10 C12,-7 11,-4 10,-2.5 Z" fill="#080808"/>
+      <path d="M5,-4 C5,-6.5 5,-9 5.5,-11" stroke="#121212" stroke-width="0.4" fill="none"/>
+      <path d="M8.5,-3.5 C8.5,-6.5 9,-9 10.5,-12" stroke="#121212" stroke-width="0.4" fill="none"/>
+      
+      <!-- Snout -->
+      <ellipse cx="11.5" cy="0" rx="2" ry="1.5" fill="#080808"/>
+      <ellipse cx="13" cy="-0.3" rx="0.4" ry="0.3" fill="#000"/>
+      <ellipse cx="13" cy="0.5" rx="0.4" ry="0.3" fill="#000"/>
+      
       <!-- Eyes -->
-      <circle cx="-1.8" cy="-9" r="1.2" fill="#0d1117">
-        <animate attributeName="r" values="1.2;0.4;1.2" dur="2s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="1.8" cy="-9" r="1.2" fill="#0d1117">
-        <animate attributeName="r" values="1.2;0.4;1.2" dur="2s" repeatCount="indefinite" />
-      </circle>
+      <circle cx="8.5" cy="-1.8" r="0.9" fill="#101010"/>
+      <circle cx="8.5" cy="1.8" r="0.9" fill="#101010"/>
+      <circle cx="8.7" cy="-1.6" r="0.3" fill="#202020"/>
+      <circle cx="8.7" cy="2" r="0.3" fill="#202020"/>
+      
+      <!-- Feet -->
+      <g stroke="#080808" stroke-width="0.4" fill="none" stroke-linecap="round">
+        <path d="M-2,3.5 L-2.5,6 M-2.5,6 L-3.5,7.5 M-2.5,6 L-2.5,8 M-2.5,6 L-1.5,7.5"/>
+        <path d="M1,3.5 L1,6 M1,6 L0,7.5 M1,6 L1,8 M1,6 L2,7.5"/>
+      </g>
+      
+      <!-- Tail membrane -->
+      <path d="M-4.5,2.5 Q-3.5,5 -2,3.5 Q-0.5,6 1,3.5 Q2,3.5 2.5,2.5 Q0,3.5 -2,3.5 Q-4,3.5 -4.5,2.5 Z" fill="#0a0a0a"/>
     </g>
   </g>
+  
+  <rect width="100%" height="100%" fill="url(#sky)" opacity=".06"/>
 </svg>

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/bat-header.svg" alt="Bat flying across night sky" />
+  <img src="assets/bat-header.svg" alt="Bat flying across night sky" width="50%" />
 </div>
 
 <br />
