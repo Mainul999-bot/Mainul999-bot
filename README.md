@@ -5,8 +5,6 @@
   </a>
 </div>
 
-<img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%" />
-
 <div align="center">
   <img src="https://img.shields.io/badge/focus-Fullstack%20Development-F77846?style=for-the-badge&logo=github&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/lives-Bangladesh-F77846?style=for-the-badge&logo=googlemaps&labelColor=0d1117" />
@@ -65,10 +63,6 @@ _No recent activity yet_
 <!--END_SECTION:activity-->
 
 <hr />
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%" />
-</div>
 
 <div align="center">
   <b>💻 Crafted with code, caffeine, and curiosity</b>
