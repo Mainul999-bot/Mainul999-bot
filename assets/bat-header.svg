@@ -1,19 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#010108" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#010108" stop-opacity="0.3"/>
-    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffff8" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#faf6e8" stop-opacity="0.6"/>
+      <stop offset="85%" stop-color="#e8dfc0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c8b890" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonSurface" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fffff8"/>
+      <stop offset="30%" stop-color="#f5f0e0"/>
+      <stop offset="70%" stop-color="#e8e0c8"/>
+      <stop offset="100%" stop-color="#d8d0b8"/>
+    </radialGradient>
+    <radialGradient id="crater1" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#d0c8a8"/>
+      <stop offset="100%" stop-color="#e0d8c0"/>
+    </radialGradient>
+    <radialGradient id="crater2" cx="45%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#c8c0a0"/>
+      <stop offset="100%" stop-color="#dcd4b8"/>
+    </radialGradient>
+    <filter id="moonBlur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
   </defs>
 
-  <image href="batman-thumb.jpg" x="0" y="0" width="800" height="400" preserveAspectRatio="xMidYMid slice"/>
-  <rect width="800" height="400" fill="url(#overlay)"/>
+  <rect width="800" height="300" fill="#010108"/>
 
-  <circle cx="680" cy="80" r="40" fill="#fffff8" opacity="0.9"/>
-  <circle cx="680" cy="80" r="50" fill="#fffff8" opacity="0.15"/>
-  <circle cx="680" cy="80" r="70" fill="#fffff8" opacity="0.08"/>
+  <!-- Outer atmospheric glow -->
+  <circle cx="680" cy="80" r="100" fill="#fffff0" opacity="0.04" filter="url(#outerGlow)"/>
+  <circle cx="680" cy="80" r="80" fill="#fffff0" opacity="0.06" filter="url(#outerGlow)"/>
+  <!-- Mid glow rings -->
+  <circle cx="680" cy="80" r="70" fill="#fffff4" opacity="0.08" filter="url(#moonBlur)"/>
+  <circle cx="680" cy="80" r="55" fill="#fffff8" opacity="0.12" filter="url(#moonBlur)"/>
+  <!-- Inner glow -->
+  <circle cx="680" cy="80" r="48" fill="url(#moonGlow)" opacity="0.5" filter="url(#softGlow)"/>
+  <!-- Moon body -->
+  <circle cx="680" cy="80" r="40" fill="url(#moonSurface)"/>
+  <!-- Subtle surface texture / maria (dark patches) -->
+  <ellipse cx="670" cy="72" rx="12" ry="10" fill="#d5cdb0" opacity="0.4"/>
+  <ellipse cx="692" cy="88" rx="8" ry="6" fill="#d0c8a8" opacity="0.35"/>
+  <ellipse cx="675" cy="95" rx="10" ry="7" fill="#d8d0b5" opacity="0.3"/>
+  <!-- Craters -->
+  <circle cx="665" cy="70" r="5" fill="url(#crater1)" opacity="0.5"/>
+  <circle cx="665" cy="70" r="4.5" fill="none" stroke="#c8c0a0" stroke-width="0.3" opacity="0.4"/>
+  <circle cx="690" cy="85" r="3.5" fill="url(#crater2)" opacity="0.45"/>
+  <circle cx="690" cy="85" r="3" fill="none" stroke="#c0b898" stroke-width="0.3" opacity="0.35"/>
+  <circle cx="678" cy="60" r="2.5" fill="#ddd8c0" opacity="0.4"/>
+  <circle cx="678" cy="60" r="2" fill="none" stroke="#ccc5a8" stroke-width="0.2" opacity="0.3"/>
+  <circle cx="695" cy="70" r="2" fill="#dcd5bc" opacity="0.35"/>
+  <circle cx="672" cy="92" r="3" fill="#d8d0b5" opacity="0.4"/>
+  <circle cx="672" cy="92" r="2.5" fill="none" stroke="#c8c0a5" stroke-width="0.2" opacity="0.3"/>
+  <circle cx="685" cy="75" r="1.8" fill="#d5ceb2" opacity="0.35"/>
+  <circle cx="660" cy="82" r="1.5" fill="#d8d2b8" opacity="0.3"/>
+  <circle cx="700" cy="78" r="1.2" fill="#ddd6bc" opacity="0.3"/>
+  <!-- Highlight on upper-left (light source feel) -->
+  <ellipse cx="668" cy="66" rx="20" ry="18" fill="#fffff8" opacity="0.12"/>
+  <ellipse cx="665" cy="63" rx="12" ry="10" fill="#ffffff" opacity="0.08"/>
+  <!-- Subtle rim light -->
+  <circle cx="680" cy="80" r="39.5" fill="none" stroke="#fffff8" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="680" cy="80" r="40.5" fill="none" stroke="#fffff0" stroke-width="0.5" opacity="0.15"/>
 
-  <g fill="#fff" opacity="0.8">
+  <!-- Stars -->
+  <g fill="#fff" opacity="0.7">
     <circle cx="50" cy="40" r="1.5"/>
     <circle cx="150" cy="80" r="1"/>
     <circle cx="300" cy="30" r="1.2"/>
@@ -28,6 +83,23 @@
     <circle cx="250" cy="120" r="0.6"/>
   </g>
 
+  <!-- Twinkling stars -->
+  <g fill="#fff">
+    <circle cx="120" cy="45" r="0.8" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="35" r="0.9" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="140" r="0.7" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="570" cy="55" r="0.6" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Bat -->
   <g>
     <animateMotion dur="8s" repeatCount="indefinite" path="M-60,180 Q200,100 400,160 Q600,220 860,150"/>
     <g transform="scale(1.2)">
