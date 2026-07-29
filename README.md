@@ -1,4 +1,4 @@
-<img src="assets/bat-header.svg" width="100%" alt="bat" />
+<img src="https://github.com/Mainul999-bot/Mainul999-bot/raw/main/assets/bat-header.svg" width="100%" alt="bat" />
 
 <br />
 
