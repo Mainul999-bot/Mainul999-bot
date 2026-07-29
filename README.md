@@ -56,14 +56,6 @@
 
 <hr />
 
-## 📈 Recent Activity
-
-<!--START_SECTION:activity-->
-_No recent activity yet_
-<!--END_SECTION:activity-->
-
-<hr />
-
 <div align="center">
   <b>💻 Crafted with code, caffeine, and curiosity</b>
   <br />
