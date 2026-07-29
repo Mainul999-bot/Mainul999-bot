@@ -1,10 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
-  <rect width="800" height="300" fill="#010108"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#010108" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <image href="batman-thumb.jpg" x="0" y="0" width="800" height="400" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="800" height="400" fill="url(#overlay)"/>
+
   <circle cx="680" cy="80" r="40" fill="#fffff8" opacity="0.9"/>
   <circle cx="680" cy="80" r="50" fill="#fffff8" opacity="0.15"/>
   <circle cx="680" cy="80" r="70" fill="#fffff8" opacity="0.08"/>
 
-  <g fill="#fff" opacity="0.7">
+  <g fill="#fff" opacity="0.8">
     <circle cx="50" cy="40" r="1.5"/>
     <circle cx="150" cy="80" r="1"/>
     <circle cx="300" cy="30" r="1.2"/>

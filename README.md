@@ -65,13 +65,10 @@
   <br />
   <img src="https://img.shields.io/badge/Made%20with-Markdown-F77846?style=flat-square&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/From-Bangladesh-F77846?style=flat-square&labelColor=0d1117" />
+  <a href="assets/batman-bg.mp4"><img src="https://img.shields.io/badge/▶%20Video-F77846?style=flat-square&labelColor=0d1117" /></a>
 </div>
 
 <br />
-
-[<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video - Click to play" />](assets/batman-bg.mp4)
-
-<div align="center"><b>▶ Click the image above to play the video</b></div>
 
 <br />
 
