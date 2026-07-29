@@ -71,9 +71,7 @@
 
 <br />
 
-[<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video - Click to play" />](assets/batman-bg.mp4)
-
-<div align="center"><b>▶ Click image above to play video</b></div>
+[<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video" />](assets/batman-bg.mp4)
 
 <br />
 
