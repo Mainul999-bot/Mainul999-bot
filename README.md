@@ -69,7 +69,9 @@
 
 <br />
 
-<video src="https://github.com/Mainul999-bot/Mainul999-bot/raw/main/assets/batman-bg.mp4" controls muted width="100%"></video>
+[<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video - Click to play" />](assets/batman-bg.mp4)
+
+<div align="center"><b>▶ Click the image above to play the video</b></div>
 
 <br />
 
