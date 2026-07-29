@@ -38,31 +38,6 @@
 
 <hr />
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <a href="https://git.io/streak-stats">
-    <img height="180" src="https://streak-stats.demolab.com/?user=Mainul999-bot&theme=radical&hide_border=true&background=0d1117&ring=F77846&fire=F77846&currStreakLabel=F77846" />
-  </a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/Ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mainul999-bot&theme=react-dark&hide_border=true&bg_color=0d1117&color=F77846&line=F77846&point=FFFFFF&area=true" width="95%" />
-  </a>
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://img.shields.io/github/followers/Mainul999-bot?style=for-the-badge&logo=github&color=F77846&label=FOLLOWERS" />
-  <img src="https://img.shields.io/github/stars/Mainul999-bot?style=for-the-badge&logo=star&color=F77846&label=STARS" />
-  <img src="https://komarev.com/ghpvc/?username=Mainul999-bot&color=F77846&style=for-the-badge&label=PROFILE+VIEWS" />
-  <img src="https://img.shields.io/badge/Public%20Repos-4%20%E2%9C%94-F77846?style=for-the-badge&labelColor=0d1117" />
-</div>
-
-<hr />
-
 ## 🚀 Tech Stack & Tools
 
 <div align="center">
