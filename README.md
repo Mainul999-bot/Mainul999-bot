@@ -1,21 +1,20 @@
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=32&duration=2800&pause=700&color=00F7FF&center=true&vCenter=true&width=700&height=80&lines=Hi+%F0%9F%91%8B%2C+I'm+Mainul999-bot;Code.+Create.+Repeat.;Welcome+to+my+digital+space!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=32&duration=2800&pause=700&color=F77846&center=true&vCenter=true&width=700&height=80&lines=Hi+%F0%9F%91%8B%2C+I'm+AlienX;Code.+Create.+Repeat.;Welcome+to+my+digital+space!" alt="Typing SVG" />
   </a>
 </div>
 
 <img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%" />
 
 <div align="center">
-  <img src="https://img.shields.io/badge/focus-Fullstack%20Development-00F7FF?style=for-the-badge&logo=github&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/lives-Bangladesh-00F7FF?style=for-the-badge&logo=googlemaps&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/code%20since-2021-00F7FF?style=for-the-badge&logo=codefactor&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/focus-Fullstack%20Development-F77846?style=for-the-badge&logo=github&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/lives-Bangladesh-F77846?style=for-the-badge&logo=googlemaps&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/code%20since-2023-F77846?style=for-the-badge&logo=codefactor&labelColor=0d1117" />
 </div>
 
 <br />
 
-<!-- Social Links -->
 <div align="center">
   <a href="https://github.com/Mainul999-bot">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
@@ -33,51 +32,33 @@
 
 <br />
 
-<!-- Quote -->
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" />
 </div>
 
 <hr />
 
-## 📊 GitHub Analytics
+## 📊 GitHub Stats
 
 <div align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=Mainul999-bot&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d1117&title_color=00F7FF&icon_color=00F7FF" />
-  </a>
-  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=Mainul999-bot&theme=radical&hide_border=true&background=0d1117&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF" />
+  <a href="https://git.io/streak-stats">
+    <img height="180" src="https://streak-stats.demolab.com/?user=Mainul999-bot&theme=radical&hide_border=true&background=0d1117&ring=F77846&fire=F77846&currStreakLabel=F77846" />
   </a>
 </div>
 
 <div align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mainul999-bot&layout=donut&theme=radical&hide_border=true&bg_color=0d1117&title_color=00F7FF" height="170" />
-  </a>
   <a href="https://github.com/Ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mainul999-bot&theme=react-dark&hide_border=true&bg_color=0d1117&color=00F7FF&line=00F7FF&point=FFFFFF&area=true" width="72%" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mainul999-bot&theme=react-dark&hide_border=true&bg_color=0d1117&color=F77846&line=F77846&point=FFFFFF&area=true" width="95%" />
   </a>
-</div>
-
-<hr />
-
-## 🏆 Achievements & Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mainul999-bot&theme=radical&no-frame=true&no-bg=false&column=4&margin-w=15&margin-h=15&title_color=00F7FF" width="100%" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Mainul999-bot&color=00F7FF&style=for-the-badge&label=PROFILE+VIEWS" />
-  <a href="https://github.com/Mainul999-bot?tab=followers">
-    <img src="https://img.shields.io/github/followers/Mainul999-bot?style=for-the-badge&logo=github&color=00F7FF&label=FOLLOWERS" />
-  </a>
-  <a href="https://github.com/Mainul999-bot?tab=stars">
-    <img src="https://img.shields.io/github/stars/Mainul999-bot?style=for-the-badge&logo=star&color=00F7FF&label=STARS" />
-  </a>
+  <img src="https://img.shields.io/github/followers/Mainul999-bot?style=for-the-badge&logo=github&color=F77846&label=FOLLOWERS" />
+  <img src="https://img.shields.io/github/stars/Mainul999-bot?style=for-the-badge&logo=star&color=F77846&label=STARS" />
+  <img src="https://komarev.com/ghpvc/?username=Mainul999-bot&color=F77846&style=for-the-badge&label=PROFILE+VIEWS" />
+  <img src="https://img.shields.io/badge/Public%20Repos-4%20%E2%9C%94-F77846?style=for-the-badge&labelColor=0d1117" />
 </div>
 
 <hr />
@@ -102,10 +83,20 @@
 
 <hr />
 
+## 🎧 Spotify Now Playing
+
+<div align="center">
+  <a href="https://spotify-github-profile.vercel.app/api/view?uid=Mainul999-bot&redirect=true">
+    <img src="https://spotify-github-profile.vercel.app/api/view?uid=Mainul999-bot&cover_image=true&theme=default&show_offline=true&background_color=0d1117&interchange=false" />
+  </a>
+</div>
+
+<hr />
+
 ## 📈 Recent Activity
 
 <!--START_SECTION:activity-->
-*No recent activity yet*
+_No recent activity yet_
 <!--END_SECTION:activity-->
 
 <hr />
@@ -130,8 +121,8 @@
   <b>💻 Crafted with code, caffeine, and curiosity</b>
   <br />
   <br />
-  <img src="https://img.shields.io/badge/Made%20with-Markdown-00F7FF?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/From-Bangladesh-00F7FF?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/Made%20with-Markdown-F77846?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/From-Bangladesh-F77846?style=flat-square&labelColor=0d1117" />
   <br />
   <br />
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,4,6&height=80&section=footer" />
