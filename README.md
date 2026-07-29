@@ -66,18 +66,6 @@ _No recent activity yet_
 
 <hr />
 
-## 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mainul999-bot/Mainul999-bot/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mainul999-bot/Mainul999-bot/output/github-contribution-grid-snake.svg">
-    <img alt="Snake eating contributions" src="https://raw.githubusercontent.com/Mainul999-bot/Mainul999-bot/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
-
-<hr />
-
 <div align="center">
   <img src="https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg" width="100%" />
 </div>
