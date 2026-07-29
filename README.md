@@ -1,3 +1,73 @@
+<div align="center">
+
+  <!-- Animated Bat Flying Scene -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" style="margin:0 auto;display:block;max-width:800px;">
+    <!-- Night sky -->
+    <rect width="800" height="200" fill="#0d1117" rx="12" />
+
+    <!-- Moon glow -->
+    <circle cx="680" cy="60" r="50" fill="#F77846" opacity="0.04" />
+    <circle cx="680" cy="60" r="35" fill="#F77846" opacity="0.08" />
+
+    <!-- Moon -->
+    <circle cx="680" cy="60" r="24" fill="#1a1a2e" />
+    <circle cx="680" cy="60" r="20" fill="#F77846" opacity="0.12" />
+    <circle cx="680" cy="60" r="14" fill="#F77846" opacity="0.2" />
+    <circle cx="680" cy="60" r="8" fill="#F77846" opacity="0.4" />
+    <circle cx="680" cy="60" r="4" fill="#F77846" opacity="0.7" />
+
+    <!-- Stars -->
+    <g fill="white" opacity="0.6">
+      <circle cx="80" cy="40" r="1.5"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite" /></circle>
+      <circle cx="200" cy="55" r="1" />
+      <circle cx="320" cy="30" r="1.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.2s" repeatCount="indefinite" /></circle>
+      <circle cx="450" cy="65" r="1" />
+      <circle cx="150" cy="85" r="1" opacity="0.4" />
+      <circle cx="520" cy="35" r="1.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite" /></circle>
+      <circle cx="620" cy="75" r="1" opacity="0.3" />
+      <circle cx="400" cy="20" r="1" />
+      <circle cx="560" cy="50" r="1" />
+      <circle cx="280" cy="80" r="1" opacity="0.4" />
+      <circle cx="720" cy="35" r="1"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite" /></circle>
+    </g>
+
+    <!-- Bat -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="-250,85;950,80" dur="16s" repeatCount="indefinite" />
+
+      <!-- Wing flap group -->
+      <g transform="translate(0,100)">
+        <!-- Left wing -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-8,0,0;12,0,0;-8,0,0" dur="0.35s" repeatCount="indefinite" />
+          <path d="M-4,-8 C-18,-28 -45,-18 -40,5 C-35,-3 -25,0 -18,-8 C-14,-3 -10,2 -4,-8Z" fill="#F77846" opacity="0.85" />
+        </g>
+        <!-- Right wing -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="8,0,0;-12,0,0;8,0,0" dur="0.35s" repeatCount="indefinite" />
+          <path d="M4,-8 C18,-28 45,-18 40,5 C35,-3 25,0 18,-8 C14,-3 10,2 4,-8Z" fill="#F77846" opacity="0.85" />
+        </g>
+        <!-- Body -->
+        <ellipse cx="0" cy="2" rx="4" ry="9" fill="#F77846" opacity="0.9" />
+        <!-- Head -->
+        <circle cx="0" cy="-8" r="4.5" fill="#F77846" opacity="0.9" />
+        <!-- Ears -->
+        <polygon points="-3,-12 -8,-22 -1,-16" fill="#F77846" opacity="0.9" />
+        <polygon points="3,-12 8,-22 1,-16" fill="#F77846" opacity="0.9" />
+        <!-- Eyes -->
+        <circle cx="-1.8" cy="-9" r="1.2" fill="#0d1117">
+          <animate attributeName="r" values="1.2;0.4;1.2" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1.8" cy="-9" r="1.2" fill="#0d1117">
+          <animate attributeName="r" values="1.2;0.4;1.2" dur="2s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+  </svg>
+
+</div>
+
+<br />
 
 <div align="center">
   <a href="https://git.io/typing-svg">
