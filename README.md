@@ -83,16 +83,6 @@
 
 <hr />
 
-## 🎧 Spotify Now Playing
-
-<div align="center">
-  <a href="https://spotify-github-profile.vercel.app/api/view?uid=Mainul999-bot&redirect=true">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=Mainul999-bot&cover_image=true&theme=default&show_offline=true&background_color=0d1117&interchange=false" />
-  </a>
-</div>
-
-<hr />
-
 ## 📈 Recent Activity
 
 <!--START_SECTION:activity-->
