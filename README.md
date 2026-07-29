@@ -69,7 +69,7 @@
 
 <br />
 
-<video src="assets/batman-bg.mp4" controls muted width="100%" style="border-radius: 12px;"></video>
+<video src="https://github.com/Mainul999-bot/Mainul999-bot/raw/main/assets/batman-bg.mp4" controls muted width="100%"></video>
 
 <br />
 
