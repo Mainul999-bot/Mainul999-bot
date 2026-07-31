@@ -68,7 +68,7 @@
 </div>
 
 <hr />
-[<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video" />](assets/batman-bg.mp4)
+[<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video" />
 
 <br />
 
