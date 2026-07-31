@@ -68,23 +68,6 @@
 </div>
 
 <hr />
-
-## 🏆 GitHub Achievements
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/pull-shark-default.png" width="80" title="Pull Shark" />
-  <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/quickdraw-default.png" width="80" title="Quickdraw" />
-  <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/starstruck-default.png" width="80" title="Starstruck" />
-  <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/galaxy-brain-default.png" width="80" title="Galaxy Brain" />
-  <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/pair-extraordinaire-default.png" width="80" title="Pair Extraordinaire" />
-  <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/yolo-default.png" width="80" title="YOLO" />
-  <img src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/public-sponsor-default.png" width="80" title="Public Sponsor" />
-</div>
-
-<br />
-
-<br />
-
 [<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video" />](assets/batman-bg.mp4)
 
 <br />
