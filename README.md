@@ -68,7 +68,6 @@
 </div>
 
 <hr />
-<img src="assets/batman-thumb.jpg" width="100%" alt="Batman Video" />
 
 <br />
 
